@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProBuild Construction - Professional Building Services</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="orange">
+    <!-- Theme Selector -->
+    <div class="theme-selector">
+        <button class="theme-btn" onclick="changeTheme('orange')" data-theme="orange">
+            <i class="fas fa-palette"></i>
+        </button>
+        <button class="theme-btn" onclick="changeTheme('blue')" data-theme="blue">
+            <i class="fas fa-water"></i>
+        </button>
+        <button class="theme-btn" onclick="changeTheme('green')" data-theme="green">
+            <i class="fas fa-leaf"></i>
+        </button>
+        <button class="theme-btn" onclick="changeTheme('purple')" data-theme="purple">
+            <i class="fas fa-gem"></i>
+        </button>
+        <button class="theme-btn" onclick="changeTheme('dark')" data-theme="dark">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-hard-hat me-2"></i>
+                <span class="brand-text">ProBuild</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7">
+                    <div class="hero-content">
+                        <div class="hero-badge mb-3">
+                            <i class="fas fa-award me-2"></i>
+                            <span>25+ Years of Excellence</span>
+                        </div>
+                        <h1 class="hero-title">Building Tomorrow's <span class="highlight">Infrastructure</span> Today</h1>
+                        <p class="hero-description">We are a leading construction company specializing in residential, commercial, and industrial projects. Our commitment to quality and innovation has made us the trusted choice for clients nationwide.</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-phone me-2"></i>Get Quote
+                            </a>
+                            <a href="#projects" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-play me-2"></i>View Projects
+                            </a>
+                        </div>
+                        <div class="hero-stats mt-5">
+                            <div class="row g-4">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h3 class="stat-number" data-count="850">0</h3>
+                                        <p class="stat-label">Projects</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h3 class="stat-number" data-count="25">0</h3>
+                                        <p class="stat-label">Years</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h3 class="stat-number" data-count="100">0</h3>
+                                        <p class="stat-label">Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-image">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-helmet-safety"></i>
+                            <span>Safety First</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-clock"></i>
+                            <span>On Time</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-medal"></i>
+                            <span>Quality Work</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="about-images">
+                        <div class="main-image">
+                            <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg" alt="Construction Team" class="img-fluid rounded-4">
+                        </div>
+                        <div class="overlay-image">
+                            <img src="https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg" alt="Construction Site" class="img-fluid rounded-4">
+                        </div>
+                        <div class="experience-badge">
+                            <h3>25+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="section-header mb-4">
+                            <span class="section-subtitle">About ProBuild</span>
+                            <h2 class="section-title">We Build Your Dreams Into Reality</h2>
+                        </div>
+                        <p class="about-text">Since 1998, ProBuild Construction has been at the forefront of the construction industry, delivering exceptional projects that stand the test of time. Our team combines traditional craftsmanship with cutting-edge technology.</p>
+                        
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Licensed & Insured</h5>
+                                    <p>Fully licensed contractors with comprehensive insurance coverage</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Modern Equipment</h5>
+                                    <p>State-of-the-art machinery and tools for efficient construction</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Quality Guarantee</h5>
+                                    <p>100% satisfaction guarantee on all our construction projects</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-cta mt-4">
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="fas fa-arrow-right me-2"></i>Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="section-header">
+                        <span class="section-subtitle">Our Services</span>
+                        <h2 class="section-title">Comprehensive Construction Solutions</h2>
+                        <p class="section-description">From residential homes to commercial complexes, we provide end-to-end construction services</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h4 class="service-title">Residential Construction</h4>
+                        <p class="service-description">Custom homes, renovations, and residential developments tailored to your lifestyle and budget requirements.</p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Custom Home Building</li>
+                            <li><i class="fas fa-check"></i> Kitchen Remodeling</li>
+                            <li><i class="fas fa-check"></i> Bathroom Renovation</li>
+                            <li><i class="fas fa-check"></i> Home Extensions</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card featured">
+                        <div class="featured-badge">Popular</div>
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h4 class="service-title">Commercial Construction</h4>
+                        <p class="service-description">Office buildings, retail spaces, and commercial facilities built to the highest professional standards.</p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Office Buildings</li>
+                            <li><i class="fas fa-check"></i> Retail Spaces</li>
+                            <li><i class="fas fa-check"></i> Warehouses</li>
+                            <li><i class="fas fa-check"></i> Shopping Centers</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <h4 class="service-title">Infrastructure Projects</h4>
+                        <p class="service-description">Roads, bridges, and civil engineering projects that build stronger communities and connections.</p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Road Construction</li>
+                            <li><i class="fas fa-check"></i> Bridge Building</li>
+                            <li><i class="fas fa-check"></i> Site Preparation</li>
+                            <li><i class="fas fa-check"></i> Utility Installation</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h4 class="service-title">Renovation & Remodeling</h4>
+                        <p class="service-description">Transform existing spaces with modern design and enhanced functionality improvements.</p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Complete Renovations</li>
+                            <li><i class="fas fa-check"></i> Interior Design</li>
+                            <li><i class="fas fa-check"></i> Historic Restoration</li>
+                            <li><i class="fas fa-check"></i> Energy Upgrades</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4 class="service-title">Project Management</h4>
+                        <p class="service-description">End-to-end project coordination ensuring quality, timeline, and budget compliance throughout.</p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Design Consultation</li>
+                            <li><i class="fas fa-check"></i> Permit Acquisition</li>
+                            <li><i class="fas fa-check"></i> Construction Oversight</li>
+                            <li><i class="fas fa-check"></i> Quality Control</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4 class="service-title">Green Building</h4>
+                        <p class="service-description">Sustainable construction practices for environmentally conscious and energy-efficient projects.</p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> LEED Certification</li>
+                            <li><i class="fas fa-check"></i> Solar Installation</li>
+                            <li><i class="fas fa-check"></i> Eco Materials</li>
+                            <li><i class="fas fa-check"></i> Energy Efficiency</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="section-header">
+                        <span class="section-subtitle">Our Portfolio</span>
+                        <h2 class="section-title">Featured Construction Projects</h2>
+                        <p class="section-description">Showcasing our finest work across residential, commercial, and infrastructure projects</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project Filter -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="project-filters text-center">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="residential">Residential</button>
+                        <button class="filter-btn" data-filter="commercial">Commercial</button>
+                        <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="projectsGrid">
+                <div class="col-lg-4 col-md-6 project-item" data-category="commercial">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg" alt="Office Complex" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h5 class="project-title">Downtown Office Complex</h5>
+                                    <p class="project-category">Commercial</p>
+                                    <div class="project-details">
+                                        <span><i class="fas fa-calendar"></i> 2023</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> New York</span>
+                                    </div>
+                                </div>
+                                <div class="project-actions">
+                                    <button class="btn btn-light btn-sm" onclick="openProjectModal('project1')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 project-item" data-category="residential">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg" alt="Luxury Home" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h5 class="project-title">Modern Family Home</h5>
+                                    <p class="project-category">Residential</p>
+                                    <div class="project-details">
+                                        <span><i class="fas fa-calendar"></i> 2023</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> California</span>
+                                    </div>
+                                </div>
+                                <div class="project-actions">
+                                    <button class="btn btn-light btn-sm" onclick="openProjectModal('project2')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 project-item" data-category="infrastructure">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg" alt="Bridge Project" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h5 class="project-title">City Bridge Construction</h5>
+                                    <p class="project-category">Infrastructure</p>
+                                    <div class="project-details">
+                                        <span><i class="fas fa-calendar"></i> 2022</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> Texas</span>
+                                    </div>
+                                </div>
+                                <div class="project-actions">
+                                    <button class="btn btn-light btn-sm" onclick="openProjectModal('project3')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 project-item" data-category="commercial">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/1438248/pexels-photo-1438248.jpeg" alt="Shopping Center" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h5 class="project-title">Riverside Shopping Center</h5>
+                                    <p class="project-category">Commercial</p>
+                                    <div class="project-details">
+                                        <span><i class="fas fa-calendar"></i> 2023</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> Florida</span>
+                                    </div>
+                                </div>
+                                <div class="project-actions">
+                                    <button class="btn btn-light btn-sm" onclick="openProjectModal('project4')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 project-item" data-category="residential">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg" alt="Residential Complex" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h5 class="project-title">Luxury Apartments</h5>
+                                    <p class="project-category">Residential</p>
+                                    <div class="project-details">
+                                        <span><i class="fas fa-calendar"></i> 2022</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> Nevada</span>
+                                    </div>
+                                </div>
+                                <div class="project-actions">
+                                    <button class="btn btn-light btn-sm" onclick="openProjectModal('project5')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 project-item" data-category="commercial">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg" alt="Medical Center" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h5 class="project-title">Medical Center</h5>
+                                    <p class="project-category">Commercial</p>
+                                    <div class="project-details">
+                                        <span><i class="fas fa-calendar"></i> 2023</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> Arizona</span>
+                                    </div>
+                                </div>
+                                <div class="project-actions">
+                                    <button class="btn btn-light btn-sm" onclick="openProjectModal('project6')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="section-header">
+                        <span class="section-subtitle">Our Team</span>
+                        <h2 class="section-title">Meet Our Expert Team</h2>
+                        <p class="section-description">Experienced professionals dedicated to delivering exceptional construction results</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg" alt="John Smith" class="img-fluid">
+                            <div class="team-overlay">
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h5 class="team-name">John Smith</h5>
+                            <p class="team-position">Project Manager</p>
+                            <p class="team-description">25+ years experience in construction management and project coordination.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg" alt="Sarah Johnson" class="img-fluid">
+                            <div class="team-overlay">
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h5 class="team-name">Sarah Johnson</h5>
+                            <p class="team-position">Lead Architect</p>
+                            <p class="team-description">Award-winning architect specializing in sustainable and modern design solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg" alt="Mike Davis" class="img-fluid">
+                            <div class="team-overlay">
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h5 class="team-name">Mike Davis</h5>
+                            <p class="team-position">Site Supervisor</p>
+                            <p class="team-description">Expert in construction safety and quality control with extensive field experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg" alt="Emily Brown" class="img-fluid">
+                            <div class="team-overlay">
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h5 class="team-name">Emily Brown</h5>
+                            <p class="team-position">Interior Designer</p>
+                            <p class="team-description">Creative designer focused on functional and beautiful interior spaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="section-header">
+                        <span class="section-subtitle">Get In Touch</span>
+                        <h2 class="section-title">Start Your Project Today</h2>
+                        <p class="section-description">Ready to build your dream? Contact us for a free consultation and quote</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="firstName" class="form-label">First Name *</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="lastName" class="form-label">Last Name *</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="phone" class="form-label">Phone Number *</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="projectType" class="form-label">Project Type *</label>
+                                        <select class="form-select" id="projectType" required>
+                                            <option value="">Select Project Type</option>
+                                            <option value="residential">Residential Construction</option>
+                                            <option value="commercial">Commercial Construction</option>
+                                            <option value="renovation">Renovation & Remodeling</option>
+                                            <option value="infrastructure">Infrastructure</option>
+                                            <option value="consultation">Consultation</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="budget" class="form-label">Estimated Budget</label>
+                                        <select class="form-select" id="budget">
+                                            <option value="">Select Budget Range</option>
+                                            <option value="under-50k">Under $50,000</option>
+                                            <option value="50k-100k">$50,000 - $100,000</option>
+                                            <option value="100k-250k">$100,000 - $250,000</option>
+                                            <option value="250k-500k">$250,000 - $500,000</option>
+                                            <option value="over-500k">Over $500,000</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="message" class="form-label">Project Details *</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your project requirements, timeline, and any specific needs..." required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Office Location</h5>
+                                <p>123 Construction Avenue<br>Building City, BC 12345<br>United States</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Phone Numbers</h5>
+                                <p>Main: (555) 123-4567<br>Emergency: (555) 987-6543</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Email Addresses</h5>
+                                <p>info@probuild.com<br>projects@probuild.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Business Hours</h5>
+                                <p>Monday - Friday: 7:00 AM - 6:00 PM<br>Saturday: 8:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-content">
+                        <div class="footer-logo mb-3">
+                            <i class="fas fa-hard-hat me-2"></i>
+                            <span class="brand-text">ProBuild</span>
+                        </div>
+                        <p class="footer-description">Leading construction company with 25+ years of experience in residential, commercial, and infrastructure projects.</p>
+                        <div class="social-links">
+                            <a href="#home" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#home" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#home" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#home" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#home" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5 class="footer-title">Services</h5>
+                        <ul class="footer-menu">
+                            <li><a href="#services">Residential</a></li>
+                            <li><a href="#services">Commercial</a></li>
+                            <li><a href="#services">Infrastructure</a></li>
+                            <li><a href="#services">Renovation</a></li>
+                            <li><a href="#services">Green Building</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5 class="footer-title">Company</h5>
+                        <ul class="footer-menu">
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-newsletter">
+                        <h5 class="footer-title">Newsletter</h5>
+                        <p>Subscribe to get updates on our latest projects and construction tips.</p>
+                        <form class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email address">
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-copyright">&copy; 2024 ProBuild Construction. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
